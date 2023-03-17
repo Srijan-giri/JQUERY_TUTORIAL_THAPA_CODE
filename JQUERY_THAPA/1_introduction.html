@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JQUERY</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  </head>
+  <body>
+        <div id="test">I am going to hide you......</div>
+        <button id="hideandseek">Click ME</button>
+        <script>
+            // document.getElementById('test').innerHTML="Hello World by JavaScript";
+
+            // function hideandseek(){
+            //     document.getElementById('test').style.display="none";
+            // }
+            // $(document).ready(function(){
+            //     $('#test').text3('Hello World By JQUERY');
+            // })
+
+            $(document).ready(function(){
+               $('#hideandseek').click(function(){
+                $('#test').hide();
+               });
+            });
+        </script>
+  </body>
+</html>

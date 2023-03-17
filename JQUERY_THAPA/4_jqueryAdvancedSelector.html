@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQUERY-AdvancedSelector</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+</head>
+<body>
+    <div style="width:50%;margin:auto">
+      
+        <ol type="1" style="list-style-type: none" id="t1">
+            <li>index 0 : Javascript</li>
+            <li>index 1 : Angular</li>
+            <li>index 2 : Bootstrap</li>
+            <li>index 3 : Jquery</li>
+            <li>index 4 : PHP</li>
+        </ol>
+
+        <ol type="1" style="list-style-type: none" id="t2">
+            <li>index 0 : Javascript</li>
+            <li>index 1 : Angular</li>
+            <li>index 2 : Bootstrap</li>
+            <li>index 3 : Jquery</li>
+            <li>index 4 : PHP</li>
+        </ol>
+
+        <button id="btn_id">Click Me</button>
+    </div>
+
+    <script>
+        $(document).ready(function() {
+            $('#btn_id').click(function() {
+                // $('*').css({
+                //     "backgroundColor": "blue",
+                //     "color": "white"
+                // });
+
+                // $(this).css({
+                //     "backgroundColor":"red",
+                //     "color":"white"
+                //  });
+
+                //  $('[type]').hide("slow");
+
+                //  $('li:even').css('color','red');
+                //  $('li:odd').css('color','green');
+
+                // $('li:first-child').css('color','pink');
+                // $('#t2 li:last-child').css('color','pink');
+
+
+                // $('li:nth-child(3)').css('color','red');
+                $('li:nth-last-child(2)').css('color','pink');
+            
+
+        });
+    });
+
+
+    </script>
+</body>
+</html>

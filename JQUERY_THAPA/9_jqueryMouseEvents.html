@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <title>JQUERY-Mouse EVENTS</title> 
+   
+</head>
+<body>
+
+    <!-- 1. mouseenter(): the function is executed when mouse pointer enter the HTML elements
+    2. mouseleave(): the function is executed when mouse pointer leaves the HTML elements 
+    3. mousedown(): the function is executed ,when the left,middle or right mouse button is pressed down , while the mouse is over the html element.
+
+    4.mouseup(): the function is executed ,when the left,middle or right mouse button is released , while the mouse is over the html element. -->
+
+    <p> Hii. Welcome to my channel :) </p>
+
+   <script>
+    $(document).ready(function(){
+        // $('p').mouseenter(function(){
+        //     $(this).css('color','red');
+        // });
+
+        // $('p').mouseleave(function(){
+        //     $(this).css('color','red');
+        // });
+
+        // $('p').mouseup(function(){
+        //     $(this).css('color','red');
+        // });
+
+        $('p').mousedown(function(){
+            $(this).css('color','red');
+        });
+
+    });
+   </script>
+    
+</body>
+</html>

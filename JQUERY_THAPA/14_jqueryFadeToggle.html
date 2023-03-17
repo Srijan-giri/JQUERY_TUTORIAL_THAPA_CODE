@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <title>JQUERY-Fade Toggle</title>
+
+    <style>
+      .centerdiv {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      #firstDiv {
+        width: 200px;
+        height: 100px;
+        background-color: red;
+      }
+
+      #secondDiv {
+        width: 200px;
+        height: 100px;
+        background-color: green;
+      }
+
+      #thirdDiv {
+        width: 200px;
+        height: 100px;
+        background-color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Fading Effect -->
+
+    <!-- The fadeToggle() method toggles between the fadeIn() and fadeOut() methods-->
+
+    <h1 style="text-align: center">
+      With jQuery you can fadean element in and out of visibility
+    </h1>
+    <br />
+    <div class="centerdiv">
+      <button id="fadetoggle">FadeToggle</button>
+      <!-- <button id="fadein">FadeIn</button> -->
+      <hr />
+      <div id="firstDiv"></div>
+      <br />
+      <div id="secondDiv"></div>
+      <br />
+      <div id="thirdDiv"></div>
+      <br /><br /><br />
+    </div>
+    <script>
+      $(document).ready(function () {
+        $("#fadetoggle").click(function () {
+          $("#firstDiv").fadeToggle();
+          $("#secondDiv").fadeToggle("slow");
+          $("#thirdDiv").fadeToggle(3000);
+        });
+      });
+    </script>
+  </body>
+</html>
