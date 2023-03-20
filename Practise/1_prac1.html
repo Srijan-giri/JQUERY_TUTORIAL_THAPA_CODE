@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+</head>
+<body>
+    <div>
+        <p id="1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae perferendis exercitationem magni aperiam. Earum natus animi dignissimos! Sed nobis ut asperiores temporibus consequatur totam reiciendis officiis hic voluptatum dolorum commodi, necessitatibus voluptas ipsam quas aspernatur obcaecati ipsa.</p>
+    </div>
+    <div>
+        <p id="2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora, qui! Maxime quam debitis exercitationem sequi! Voluptates voluptas laudantium est magni, alias, quod, iure beatae ipsam tempora similique veniam quibusdam aliquam illum accusantium facilis minima facere enim a nihil nemo ab.</p>
+    </div>
+
+    <ul>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, fugit!</li>
+        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, eligendi.</li>
+    </ul>
+
+    <button id="hide">CLick Me</button>
+
+    <script>
+        $(document).ready(function(){
+            $('#hide').click(function(){
+                // $('#2').hide();
+                // $('li:last').hide();
+                $('li:first').hide();
+
+            })
+        })
+    </script>
+</body>
+</html>

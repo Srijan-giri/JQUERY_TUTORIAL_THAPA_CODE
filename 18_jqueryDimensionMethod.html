@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <title>JQUERY-Mouse EVENTS</title> 
+    <style>
+        #measure{
+            width: 600px;
+            height: 200px;
+            border: 10px solid red;
+            background-color: blue;
+        }
+        
+
+    </style>
+   
+</head>
+<body>
+
+  <div id="measure">
+
+  </div>
+  <br>
+  <button id="dimension">Check</button>
+  <br><br>
+  <input type="text" name="" id="widths">
+  <input type="text" name="" id="heights">
+
+   <script>
+    $(document).ready(function(){
+       $('#dimension').click(function(){
+         var x = "";
+         var y = "";
+         x=x+"The width of the div is "+$('#measure').width()+"px.";
+         y=y+"The height of the div is "+$('#measure').height()+"px.";
+
+         $("#widths").val(x);
+         $("#heights").val(y);
+
+
+       })
+
+    });
+   </script>
+    
+</body>
+</html>

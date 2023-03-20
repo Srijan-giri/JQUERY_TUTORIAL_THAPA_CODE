@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <title>JQUERY-selector</title>
+  </head>
+  <body>
+    <p class="test1" style="background-color: #0CF86D;color:white;">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad nostrum ab
+      aliquam deserunt eligendi harum, ipsam sunt! Dolorum illum neque,
+      molestiae incidunt officia eligendi, voluptate odit voluptatum fugit in
+      doloremque rerum unde pariatur. Quibusdam nostrum fuga eum quod tenetur
+      voluptate suscipit incidunt totam iure atque cupiditate, explicabo libero,
+      omnis aperiam ad voluptatem harum hic soluta recusandae, reiciendis ullam.
+      Facere enim accusantium expedita quaerat mollitia velit ullam quisquam
+      aliquid consequatur omnis beatae consequuntur nihil pariatur.
+    </p>
+    <br />
+    <p class="test2" style="background-color: #0CBFF8;color:white;">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid culpa
+      harum eveniet non deserunt eum. Reprehenderit sint assumenda deleniti
+      dolores fugiat facere harum magni beatae illum perferendis accusamus quasi
+      rerum corrupti veritatis delectus voluptate a eos, sed quae animi alias
+      voluptatem quam! Culpa tempore mollitia tempora dolores quo natus tenetur
+      alias facilis, ipsum officiis obcaecati dicta aut veniam, ea rerum
+      delectus aspernatur, animi numquam illo temporibus. Reprehenderit nam eius
+      ea cupiditate! Suscipit, expedita eveniet, tenetur temporibus nihil
+      tempore.
+    </p>
+
+    <ul>
+      <li style="background-color: #F80C70;color:white;">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis eum
+        inventore expedita molestias culpa a officia dolorum beatae! Doloremque
+        adipisci quasi natus, enim reprehenderit sint consectetur atque numquam
+        cum dolor.
+      </li>
+      <br>
+      <li style="background-color: #D40CF8;color:white;">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque dolore
+        iusto, ut quos officiis odit voluptates consequatur, illo minus
+        assumenda corrupti numquam obcaecati perspiciatis. Accusamus temporibus
+        ducimus officiis nulla cumque repudiandae, autem non. Magnam, impedit!
+      </li>
+    </ul>
+
+<button id="hideandseek" style="background-color: #0C17F8;color:white;border: none;padding:10px"> click <menu></menu></button>
+
+    <script>
+          $(document).ready(function(){
+                $('#hideandseek').click(function(){
+                    // $('.test1').hide();
+                    // $('.test2').hide();
+                    // $('p').hide();
+                    // $('li').hide();
+                    // $('ul li:first').hide();
+                    $('li:last').hide("slow");
+                })
+          });
+
+
+    </script>
+  </body>
+</html>
