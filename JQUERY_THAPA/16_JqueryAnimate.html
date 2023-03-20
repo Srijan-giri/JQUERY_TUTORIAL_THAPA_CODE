@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <title>JQUERY-ANIMATE() METHOD</title> 
+   
+    <style>
+        h1{
+            text-transform: uppercase;
+        }
+
+        #animateDiv{
+            width: 98px;
+            height: 98px;
+            position: relative;
+            background-color: red;
+            border: 3px solid black;
+        }
+    </style>
+</head>
+<body>
+
+   <!-- the animate() method performs a custom animation of a set of css properties. -->
+
+   <h1 style="text-align: center;">JQUERY ANIMATE METHOD</h1>
+   <h2>The animate() method performs a custom animation of a set of css properties.</h2>
+
+   <button id="animatebtn">Show Details</button>
+    <br><br>
+   <div id="animateDiv"></div>
+
+   <script>
+    $(document).ready(function(){
+        $('#animatebtn').click(function(){
+            $('#animateDiv').animate({
+                left:500,
+                width:98/2,
+                height:98/2
+        });
+
+        $('#animateDiv').animate({
+                top:200,
+                width:98/2,
+                height:98/2
+        });
+
+        $('#animateDiv').animate({
+                top:200,
+                left:0,
+                width:98/2,
+                height:98/2
+        });
+
+        $('#animateDiv').animate({
+                top:0,
+                left:0,
+                width:98,
+                height:98
+        });
+
+    });
+});
+   </script>
+    
+</body>
+</html>
